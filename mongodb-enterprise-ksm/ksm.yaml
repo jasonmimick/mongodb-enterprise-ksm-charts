@@ -1,0 +1,9 @@
+marketplace-name: mongodb-enterprise
+charts:
+  - chart: mongodb-enterprise-operator
+    offered: false
+    scope: namespace
+  - chart: mongodb-enterprise-ksm
+    offered: true
+    scope: namespace
+

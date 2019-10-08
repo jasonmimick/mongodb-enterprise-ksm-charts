@@ -1,0 +1,15 @@
+---
+# Source: mongodb-enterprise-ksm/templates/mongodb.yaml
+apiVersion: mongodb.com/v1
+kind: MongoDB
+metadata:
+  name: sample-dataservice
+  namespace: ksm3
+spec:
+  members: 3
+  version: "4.0.2"
+  project: "sample-dataservice"
+  credentials: "sample-dataservice"
+  type: "Standalone"
+  persistent: true
+     

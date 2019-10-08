@@ -1,0 +1,21 @@
+---
+# Source: mongodb-enterprise-crds/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "release-name-mongodb-enterprise-crds-test-connection"
+  labels:
+    app.kubernetes.io/name: mongodb-enterprise-crds
+    helm.sh/chart: mongodb-enterprise-crds-0.1.0
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Tiller
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['release-name-mongodb-enterprise-crds:80']
+  restartPolicy: Never

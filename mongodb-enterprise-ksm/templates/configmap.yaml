@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ .Values.name }}"
+  namespace: {{ .Release.Namespace }}
+data:
+  projectName: "{{ .Values.name }}"
+  baseUrl: "https://cloud.mongodb.com"
+  orgId: "{{ .Values.orgId }}"
+  credentials: "{{ .Values.name }}"
+

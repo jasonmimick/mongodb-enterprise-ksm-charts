@@ -1,0 +1,13 @@
+---
+# Source: mongodb-enterprise-ksm/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "sample-dataservice"
+  namespace: ksm3
+data:
+  projectName: "sample-dataservice"
+  baseUrl: "https://cloud.mongodb.com"
+  orgId: "5d371dda553855dd17d4fcf9"
+  credentials: "sample-dataservice"
+

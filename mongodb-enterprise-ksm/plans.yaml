@@ -1,0 +1,3 @@
+- name: mongodb-enterprise-basic
+  description: MongoDB Enterprise
+  file: mongodb-enterprise-basic.yaml

@@ -1,0 +1,10 @@
+# Sample values for an M10 instance
+# of Atlas running in AWS called
+# sample-dataservice
+
+name: sample-dataservice
+user: "JXPIDQEA"
+publicApiKey: "697c6a30-99a4-4b85-8036-4ef56f7eabf7"
+clusterType: StandAlone
+orgId: "5d371dda553855dd17d4fcf9"
+# TODO: Add in like "small" resource requests

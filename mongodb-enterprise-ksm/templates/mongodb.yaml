@@ -1,0 +1,13 @@
+apiVersion: mongodb.com/v1
+kind: MongoDB
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  members: 3
+  version: "{{ .Values.version }}"
+  project: "{{ .Values.name }}"
+  credentials: "{{ .Values.name }}"
+  type: "{{ .Values.clusterType }}"
+  persistent: true
+     
