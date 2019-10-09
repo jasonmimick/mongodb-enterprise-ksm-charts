@@ -1,6 +1,6 @@
 name: mongodb-enterprise-ksm
 description: MongoDB Kubernetes Enterprise CRD
-version: 0.1
+version: 0.2
 kubeVersion: '>=1.11'
 keywords:
 - mongodb

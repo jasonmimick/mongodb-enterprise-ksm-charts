@@ -1,0 +1,3 @@
+- name: mongodb-enterprise-operator
+  description: MongoDB Enterprise Kubernetes Operator
+  file: mongodb-enterprise-operator.yaml
