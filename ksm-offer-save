@@ -1,0 +1,12 @@
+#!/bin/bash
+# Save all the builds/mongodb-enterprise-*.tgz files
+#
+# TODO: Refactor auth out of here to use standard
+# environement variables
+set -x          # Show what's going on.
+ksm offer save ksm.yaml \
+ $(ls --format=across mongodb-enterprise-*.tgz) \
+ --password rWnMtGX6B8xmHHBvZ8V03B5-V_cJ7y_5 \
+ --user ksm_api_admin \
+ --target https://ksm.sys.sanger.cf-app.com \
+ --insecure

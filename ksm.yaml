@@ -1,6 +1,6 @@
 marketplace-name: mongodb-enterprise
 charts:
-  - chart: mongodb-enterprise-crd
+  - chart: mongodb-enterprise-crds
     offered: false
     scope: cluster
   - chart: mongodb-enterprise-operator

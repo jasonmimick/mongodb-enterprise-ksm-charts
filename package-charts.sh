@@ -1,5 +1,12 @@
 #!/bin/bash
 
+rm -rf builds
+
+mkdir builds
+
+cp ksm.yaml builds
+cp ksm-* builds
+
 cd mongodb-enterprise-crds
 helm package --destination ../builds .
 cd ..

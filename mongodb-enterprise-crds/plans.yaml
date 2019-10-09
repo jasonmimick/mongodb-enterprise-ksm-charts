@@ -1,0 +1,3 @@
+- name: mongodb-enterprise-crds
+  description: MongoDB Enterprise Kubernetes Custom Resource Definitions
+  file: mongodb-enterprise-crds.yaml
